@@ -1,0 +1,29 @@
+package com.dl.prac;
+
+import java.util.Scanner;
+
+class person{
+//	float pName;
+//	double age;
+	void m1(float pName, float age) {
+		if(age>=18) {
+			System.out.println("is eligible for vote.");
+		}
+	}
+}
+
+public class Eg_3 {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter person name");
+		float pName = scanner.nextFloat();
+		System.out.println("enter age of person");
+		float age = scanner.nextFloat();
+		
+		person Person = new person();
+		System.out.println(Person.m1(pName, age));
+
+	}
+
+}

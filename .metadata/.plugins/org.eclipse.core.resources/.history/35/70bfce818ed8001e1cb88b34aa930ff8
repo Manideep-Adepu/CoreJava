@@ -1,0 +1,18 @@
+package com.dl.abs;
+abstract class G{
+	 void m1() {
+		System.out.println("instance method: ");
+	}
+	static void m2() {
+		System.out.println("static method: ");
+	}
+}
+
+public class Eg_4 extends A{
+
+	public static void main(String[] args) {
+		G.m2();
+
+	}
+
+}

@@ -1,0 +1,54 @@
+package com.dl.prac;
+
+
+import java.util.Scanner;
+
+//Create a class hierarchy for different shapes - Circle and Rectangle. 
+//Each shape should have a method to calculate its area. 
+//Use an interface Shape to define the method calculateArea().
+class shapes{
+	double calculateArea() {
+		return 0;
+	}
+}
+class circle extends shapes{
+	float r;
+	public circle(float r) {
+		this.r = r;
+	}
+	public double calculateArea() {
+		return Math.PI*r*r;
+	}
+}
+class rectangle extends shapes{
+	float length;
+	float breadth;
+	public rectangle(float length, float breadth) {
+		this.length = length;
+		this.breadth = breadth;
+	}
+	public double calculateArea() {
+		return length*breadth;
+	}
+}
+
+public class Eg_2 extends shapes{
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter the radius of circle");
+		float r = scanner.nextFloat();
+		System.out.println("Enter the length of rectangle");
+		float length = scanner.nextFloat();
+		System.out.println("Enter the breadth of rectangle");
+		float breadth = scanner.nextFloat();
+		
+		circle Circle = new circle(r);
+		System.out.println("Area of circle is: "+ Circle.calculateArea());
+		
+		rectangle Rectangle1 = new rectangle(length,breadth);
+		System.out.println("Area of Rectangle is: "+ Rectangle1.calculateArea());
+		
+	}
+
+}

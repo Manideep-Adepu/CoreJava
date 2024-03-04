@@ -1,0 +1,24 @@
+package com.dl.practice;
+import java.util.Scanner; 
+
+public class Eg_2 {
+
+	public static void main(String[] args) {
+		Scanner prime = new Scanner(System.in);
+		System.out.println("Enter the range of no's: ");
+		
+		System.out.println("Enter starting no: ");
+		int a = prime.nextint();
+		
+		System.out.println("Enter ending no: ");
+		int b = prime.nextint();
+		
+		for(int i=a; i<=b; i++) {
+			if(isprime(i)) {
+				System.out.println(i);
+			}
+		}
+	}
+
+}
+

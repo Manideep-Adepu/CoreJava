@@ -1,0 +1,19 @@
+package com.dl.abs;
+abstract class S{
+	static {
+		System.out.println("Hello java");
+	}
+	{
+		System.out.println("Hello Python");
+	}
+}
+
+public class Eg_2 {
+
+	public static void main(String[] args) {
+		System.out.println("Main method");
+		S s1 = new S();
+
+	}
+
+}
